@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>imaGe.com</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#39297b]">
+    <!-- Fixed Area -->
+    <div class="pb-1 fixed top-0 left-0 right-0 z-50 bg-[#39297b]">
+      <!-- Heading -->
+      <h1
+        class="mx-2 font-heading text-white text-3xl sm:text-4xl mt-7 text-center leading-[45px]"
+      >
+        Image Search Engine
+      </h1>
+      <!-- Search Engine -->
+      <div class="mt-[22px]">
+        <!-- Engine-Container -->
+        <div
+          class="bg-[#434989] sm:w-[600px] sm:mx-auto mx-4 flex h-16 sm:h-20 justify-between rounded-[8px] overflow-hidden"
+        >
+          <!-- input -->
+          <div class="flex-grow">
+            <input
+              id="input-box"
+              class="h-[100%] text-white bg-transparent pl-5 sm:pl-[30px] placeholder-white outline-none w-full text-[16px] sm:text-[18px]"
+              type="text"
+              placeholder="Search any imaGe here..."
+            />
+          </div>
+          <!-- button -->
+          <div
+            id="search-btn"
+            class="bg-[#ff3929] px-[18px] cursor-pointer sm:px-8 text-white font-[500] flex items-center"
+          >
+            <button class="sm:text-[18px] font-heading">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search Result :- Add Images using JS -->
+    <div id="search-result" class="mt-[175px] mx-4 grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-4 sm:mt-[185px] xl:grid-cols-3 xl:w-[1248px] xl:mx-auto xl:mt-[200px]"></div>
+    <!-- Show-More Btn -->
+    <div id="showMore-btn" class="flex justify-center pb-3 mt-4 xl:mt-9 xl:pb-6">
+      <button
+        class="text-white font-heading bg-[#ff3929] text- py-[10px] px-[20px] rounded-[4px] cursor-pointer text-[16px] sm:text-[18px]"
+      >
+        Show more
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
